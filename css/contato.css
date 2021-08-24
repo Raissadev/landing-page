@@ -1,0 +1,106 @@
+section.header-contact{
+    background-color: #252525;
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+    padding:5%;
+    margin-bottom: 5%;
+}
+section.header-contact h2{
+    font-size: 44px;
+    font-weight: 600;
+}
+section.contact{
+    width: 90%;
+}
+section.contact h2{
+    font-size: 44px;
+    font-weight: 600;
+}
+section.contact .title-contact{
+    margin-bottom: 3%;
+}
+section.contact .title-contact h3{
+    font-size: 21px;
+    text-transform: capitalize;
+}
+section.contact .box-item{
+    padding-bottom: 3%;
+    padding-right: 20%;
+}
+section.contact .box-item svg{
+    color: #007ced;
+    margin-right: 3%;
+}
+section.contact .box-item h4{
+    font-size: 16px;
+    font-weight: 600;  
+}
+section.contact .box-item p{
+    font-size: .92em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75em;
+    color: #d5d5d5;
+}
+section.contact .form .colForm{
+    height: 100%;
+    padding:3%;
+}
+section.contact .form form input,section.contact .form form textarea{
+    display: block;
+    width: 100%;
+    color: #eee;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px 25px 10px 12px;
+    margin-bottom: 3%;
+}
+section.contact .form form textarea{
+    height: 72.5%;
+    resize: none;
+}
+section.contact .form form input[type=submit]{
+    color: #fff;
+    border: 2px solid #007ced;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    display: inline-block;
+    position: relative;
+    padding: .8em 2.1em;
+    margin-bottom: .75em;
+    width: auto;
+    font-size: 1em;
+    line-height: 1.2;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+section.contact .form form input[type=submit]:hover{
+    background-color: #007ced;
+}
+form .title-contact .line {
+    display: block;
+    position: unset;
+    content: '';
+    width: 30%;
+    height: 2px;
+    bottom: 0;
+    background: linear-gradient(to right, #007ced 20%, #353535 20%);
+}
+
+@media screen and (max-width: 780px){
+    section.header-contact .title-contact h2{
+        font-size: 35.2px;
+    }
+    section.contact .box-item {
+        padding-bottom: 5%;
+        padding-right: 0;
+    }
+    section.contact .form{
+        margin-top: 5%;
+    }
+    section.contact .form form input, section.contact .form form textarea {
+        margin-bottom: 8%;
+    }
+}

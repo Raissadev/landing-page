@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",Helvetica,sans-serif;
+}
+body, html{
+    height: 100%;
+    background-color: #222222;
+}
+input:focus, textarea:focus, button:focus{
+    outline: 0px;
+}
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+aside{
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 0px 10px rgb(0 0 0 / 78%);
+    height: 100vh;
+    min-height: 100%;
+    padding-left: 5%;
+}
+a.btn{
+    color: #fff;
+    border: 2px solid #007ced;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    display: inline-block;
+    position: relative;
+    padding: .6em 2em;
+    margin-bottom: .75em;
+    width: auto;
+    font-size: 1em;
+    line-height: 1.2;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+a.btn:hover{
+    background-color: #007ced;
+}
+.logo{
+    text-align: center;
+    padding: 10%;
+}
+.logo a{
+    line-height: 1.4;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+aside nav.menuPainel ul{
+    list-style-type:none;
+    padding: 0;
+}
+aside nav.menuPainel ul li{
+    padding: 5%;
+    background-color: #222222;
+    margin-bottom: 5%;
+    border-radius: 30px 0 0 30px;
+}
+aside nav.menuPainel ul li svg{
+    color: #454545;
+    margin-right: 5%;
+}
+aside nav.menuPainel ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f5;
+    opacity:0.7;
+}
+aside nav.menuPainel ul li a.active{
+    opacity:1;
+}
+.backMenuPainel {
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+}
+
+section.content header{
+    height: 10vh;
+}
+section.content header .wrap{
+    height: 100%;
+    width: 90%;
+}
+section.content input{
+    color: #eee;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 1.7%;
+    width: 100%;
+}
+section.content header .search, section.content header .info-perfil, section.content header .icons{
+    display: flex;
+    align-items: center;
+}
+section.content header .info-perfil{
+    justify-content: flex-end;
+}
+section.content header .search{
+    justify-content: flex-end;
+}
+section.content .search svg{
+    color: #555;
+    position: absolute;
+    width: 15px !important;
+    margin: -0.2% -1%;
+}
+section.content header .icons svg{
+    cursor: pointer;
+}
+section.content header .info-perfil a{
+    margin: 0 2%;
+    background-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.content header .info-perfil a svg{
+    color: #fff;
+}
+section.content header .info-perfil img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 2%;
+}
+
+section.content section.painel-info .wrap{
+    width: 90%;
+}
+.box-message{
+    background-color: #333;
+    border-radius: 30px;
+    padding: 1% 3%;
+    margin: 2% auto;
+}
+.box-message .column{
+    display: flex;
+    align-items: center;
+}
+.box-message .column.icons{
+    width: 12%;
+    border-right: 1px solid #444;
+}
+.box-message .column.icons svg{
+    margin-right: 8%;
+    color: #007ced;
+}
+.box-message .column.myMessage{
+    width: 58%;
+    padding-left: 2%;
+}
+.box-message .column.myMessage span{
+    line-height: 1.75em;
+    color: #d5d5d5;
+    font-weight: 400;
+}
+.box-message .column.myButtons{
+    width: 30%;
+    justify-content: flex-end;
+}
+.box-message .column.myButtons button{
+    margin: 2%;
+    width: 100% !important;
+}
+.card{
+    background-color: #333;
+    border-radius: 10px;
+}
+
+section.painel-config .breadcrumb {
+    width: 90%;
+}
+section.painel-config .breadcrumb ul{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    padding:0 3%;
+}
+section.painel-config .breadcrumb ul li{
+    height: 6vh;
+    display: inline-flex;
+    align-items: center;
+    width: 6%;
+}
+section.painel-config .breadcrumb ul li a{
+    text-decoration: none;
+    color: white;
+}
+section.painel-config .breadcrumb ul li a.active{
+    color: #0a58ca;
+}
+
+section.contact .title-contact h3{
+    font-size: 21px;
+    text-transform: capitalize;
+}
+section.contact .box-item{
+    padding-bottom: 3%;
+    padding-right: 20%;
+}
+section.contact .box-item svg{
+    color: #007ced;
+    margin-right: 3%;
+}
+section.contact .box-item h4{
+    font-size: 16px;
+    font-weight: 600;  
+}
+section.contact .box-item p{
+    font-size: .92em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75em;
+    color: #d5d5d5;
+}
+
+div.contents-painel .painel-registro{
+    width: 90%;
+    display: block;
+    padding: 2%;
+    margin: 3% auto;
+}
+div.contents-painel .card .title{
+    margin-bottom: 3%;
+}
+div.contents-painel .card .box-form{
+    text-align: center;
+}
+main input, textarea{
+    display: block;
+    width: 100%;
+    color: #eee;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px 25px 10px 12px;
+    margin-bottom: 2%;
+}
+textarea{
+    resize: none;
+    height: 180px;
+}
+main input[type=submit],button{
+    color: #fff;
+    border: 2px solid #007ced;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    display: inline-block;
+    position: relative;
+    padding: .8em 2.1em;
+    margin-bottom: .75em;
+    width: 30% !important;
+    font-size: 1em;
+    line-height: 1.2;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+input[type=submit]:hover,button{
+    background-color: #007ced;
+}
+.line {
+    display: block;
+    position: unset;
+    content: '';
+    width: 30%;
+    height: 2px;
+    bottom: 0;
+    background: linear-gradient(to right, #007ced 20%, #353535 20%);
+}
+div.card .profissional {
+    height: 10vh;
+    background-color: #444;
+    border-radius: 10px;
+    padding: 0 3%;
+    margin-bottom: 1.2%;
+}
+div.card .profissional .nome-profissional{
+    text-align: left;
+}
+div.card .profissional .btn-profissional{
+    text-align: right;
+}
+div.card .profissional button{
+    margin: 2%;
+    width: 50% !important;
+}
+.alert{
+    position: fixed;
+    top: 20%;
+    right: 0;
+    background-color: #000;
+    border-radius: 10px;
+    z-index: 1111;
+}
+.alert p{
+    color: white;
+}
+
+
+
+@media screen and (max-width: 780px){
+    main{
+        grid-template-columns: 100% !important;
+    }
+    aside{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100vh;
+        z-index: 999;
+    }
+    .grid-three__Mobile{
+            display: grid;
+            grid-template-columns: 19% 39% 39%;
+            align-items: center;
+            grid-gap: 1%;
+    }
+    .box-message .column.icons span{
+        display: none;
+    }
+    .backMenuPainel {
+        left: 5%;
+    }
+    section.painel-config .breadcrumb ul li {
+        width: 12%;
+    }
+    div.card .profissional button{
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,177 @@
+section.header-portfolio{
+    background-color: #252525;
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+    padding:5%;
+    margin-bottom: 5%;
+}
+section.header-portfolio h2{
+    font-size: 44px;
+    font-weight: 600;
+}
+section.portfolio{
+    width: 90%;
+    margin-bottom: 5%;
+}
+section.portfolio h2{
+    font-size: 44px;
+    font-weight: 600;
+}
+section.portfolio .title-portfolio{
+    margin-bottom: 3%;
+}
+section.portfolio .title-portfolio h3{
+    font-size: 21px;
+    text-transform: capitalize;
+}
+.title-portfolio .line {
+    display: block;
+    position: unset;
+    content: '';
+    width: 20%;
+    height: 2px;
+    bottom: 0;
+    background: linear-gradient(to right, #007ced 20%, #353535 20%);
+}
+section.portfolio .box-xp{
+    position: relative;
+    padding:3% 5%;
+}
+section.portfolio .box-xp:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: #333;
+    width: 1px;
+    left: 15px;
+    bottom: 5px;
+}
+section.portfolio .box-xp:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #333;
+    width: calc(100% - 15px);
+    left: 15px;
+    bottom: 3px;
+}
+section.portfolio .box-xp:nth-of-type(3):after{
+    display: none;
+}
+section.portfolio .box-xp h6 span {
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0 0 5px -40px;
+        padding: 0 10px;
+        line-height: 23px;
+        border: 2px solid #007ced;
+        border-radius: 30px;
+        color: #d5d5d5;
+        background-color: #222;
+        z-index: 1;
+}
+section.portfolio .box-xp h6 {
+    display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+    opacity: .7;
+    margin-left: 5px;
+    font-weight:400;
+}
+section.portfolio .box-xp h3 {
+    font-size: 16px;
+    margin: 10px 0 7px;
+}
+section.portfolio .box-xp p{
+    font-size: .92em;
+}
+.col-one{
+    width: 48%;
+    display: inline-block;
+    padding: 0 2%;
+}
+
+section.portfolio .box-item{
+    position: relative;
+    width: 100%;
+    border: 2px solid #444;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+section.portfolio .box-item:hover{
+    box-shadow: 0 12px 17px rgb(0 0 0 / 12%);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+section.portfolio .box-item .certificate-logo {
+    width: 30%;
+    height: 17vh;
+    background-color: #444;
+    padding: 25px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.portfolio .box-item .certificate-logo img {
+    width: 70px;
+    object-fit: contain;
+}
+section.portfolio .box-item .certificate-info {
+    width: 70%;
+    padding: 3%;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+section.portfolio .box-item .certificate-info h4{
+    font-size: 16px;
+    margin: 0 0 5px;
+    width: 100%;
+}
+section.portfolio .box-item .certificate-info span{
+    font-size: .9em;
+    color: #aaa;
+    width: 100%;
+}
+section.portfolio .box-item .certificate-info span.date{
+    font-size: .7em;
+}
+
+
+@media screen and (max-width: 780px){
+    section.portfolio{
+        margin-top: 10%;
+    }
+    section.header-portfolio .title-portfolio h2{
+        font-size: 35.2px;
+    }
+    section.portfolio .box-item {
+        padding-bottom: 5%;
+        padding-right: 0;
+    }
+    section.portfolio .title-portfolio {
+        margin-bottom: 8%;
+    }
+    .col-one{
+        width: 100%;
+        display: block;
+    }
+    section.portfolio .box-item {
+        padding-bottom: 0;
+    }
+}

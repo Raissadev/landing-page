@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",Helvetica,sans-serif;
+}
+body, html{
+    height: 100%;
+    background-color: #222222;
+}
+input:focus, textarea:focus, button:focus{
+    outline: 0px;
+}
+body, p {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75em;
+    color: #d5d5d5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    font-style: normal;
+    color: #f5f5f5;
+}
+.center{
+    margin: 0 auto;
+}
+.col-md3x7{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+.col-md5x5{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 2%;
+    align-items: center;
+}
+.col-md4x6{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+.col-md2x8{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+.grid-four{
+    display: grid;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    align-items: center;
+    grid-gap:2%;
+}
+.grid-three{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    align-items: center;
+    grid-gap:1%;
+}
+.items-flex{
+    display: flex;
+}
+header .row{
+    width: 90%;
+    height: 17vh;
+}
+header .row h1{
+    line-height: 1.4;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 600;
+}
+header .row h1 span{
+    font-weight: 400;
+}
+header .row nav.menu ul{
+    text-align: right;
+    list-style-type: none;
+}
+header .row nav.menu ul li{
+    display: inline-block;
+    margin: 0 1.5%;
+}
+header .row nav.menu ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f5;
+    opacity:0.7;
+}
+header .row nav.menu ul li a:hover, header .row nav.menu ul li a.active, a.active{
+    opacity:1;
+}
+header .menu-mobile{
+    display: none;
+}
+main .row{
+    height: 87vh;
+    width: 80%;
+}
+main .row .img-perfil {
+    text-align: center;
+}
+main .row .img-perfil img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 18px solid #444;
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);
+    border-radius: 50%;
+}
+main .row .infos p.profissao{
+    font-size: 16px;
+    color: #aaa;
+    font-weight: 300;
+    margin-bottom: 2vh;
+}
+main .row .infos h2{
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 4vh;
+    color: #fff;
+}
+main .row .infos p{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75em;
+    color: #d5d5d5;
+    margin-bottom: 2vh;
+}
+main .row .infos a{
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2;
+    display: inline-block;
+    padding: .8em 2.1em;
+    border-radius: 30px;
+    margin-right: 0.7%;
+    transition-duration: 0.5s;
+}
+main .row .infos a:hover{
+    color: #333;
+    background-color: #fff;
+}
+
+section.formacoes .row, section.testimonials .row, section.curiosity .row{
+    width: 90%;
+}
+section .row .title h3{
+    display: inline-block;
+    position: relative;
+    font-size: 21px;
+    margin: 0 0 30px;
+    z-index: 1;
+    padding-bottom: 2.4vh;
+}
+.title-decoration h3:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: #353535;
+    height: 2px;
+    bottom: 0;
+}
+.title-decoration h3:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 30px;
+    background-color: #007ced;
+    height: 2px;
+    bottom: 0;
+}
+section.formacoes .wrap .box-item {
+    padding: 1% 1.8%;
+}
+section.formacoes .wrap .box-item svg{
+    width: 100px;
+    color: #007ced;
+    margin: 2% 2% 0 0;
+}
+section.formacoes .wrap .box-item h4{
+    font-size: 1.05em;
+}
+section.formacoes .wrap .box-item p{
+    font-size: .92em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75em;
+}
+
+section.testimonials{
+    margin-top: 10vh;
+}
+section.testimonials .box-testimonial{
+    background-color: #282828;
+    position: relative;
+    padding: 30px 20px 20px 60px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    margin: 4%;
+}
+section.testimonials .box-testimonial img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: -30px;
+    left: -30px;
+}
+section.testimonials .box-testimonial p{
+    font-style: italic;
+    font-size:14px;
+}
+section.testimonials h5.testimonial-author {
+    color: #e5e5e5;
+    margin: 0 0 2px;
+    font-size: .9em;
+}
+section.testimonials p.testimonial-firm {
+    font-size: .8em;
+    color: #bbb;
+}
+section.testimonials .box-testimonial svg {
+    color: #454545;
+    display: block;
+    line-height: 20px;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 46px;
+}
+
+section.curiosity{
+    margin-top: 10vh;
+}
+section.curiosity .box-curiosity{
+    background-color: #333;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 0 15px;
+    padding: 25px 10px 15px;
+    border: 2px solid #444;
+    border-radius: 10px;
+}
+section.curiosity .box-curiosity svg{
+    stroke: #007ced;
+    width: 50px;
+}
+section.curiosity .box-curiosity h2{
+    font-size: 16px;
+    margin: 15px;
+    font-weight:600;
+}
+section.curiosity .box-curiosity p.count{
+    color: #d5d5d5;
+    font-size: 48px;
+    line-height: 52px;
+    display: block;
+    margin: 15px 0 10px;
+}
+
+footer{
+    background-color: #252525;
+    padding: 15px 45px;
+    border-top: 2px solid #333;
+    margin-top: 10vh;
+}
+footer .sociais a{
+    color: #ddd;
+    text-decoration: none;
+    line-height: 21px;
+    font-size: 13px;
+    opacity: .6;
+    margin:0 1.7%;
+}
+footer .copy{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .copy span{
+    color: #ddd;
+    line-height: 21px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 780px){
+    .colMobile-md5x5{
+        grid-template-columns: 60% 40%;
+    }
+    .colMobile-md10{
+        grid-template-columns: 100%;
+    }
+    .items-flexMobile{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    section.testimonials .items-flexMobile{
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    section.testimonials .box-testimonial{
+        min-width: 99%;
+    }
+    header{
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 8%);
+    }
+    header .row {
+        width: 95%;
+        height: 11vh;
+    }
+    header .row nav.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    header .row .logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header .menu-mobile{
+        display: block;
+        cursor: pointer;
+    }
+    header nav.menu ul{
+        width: 60%;
+        height: 100%;
+        background-color: #222;
+        transition: all 0.44s ease-in-out;
+        position: fixed;
+        top: 11vh;
+        right: 0;
+        z-index: 999;
+    }
+    header .row nav.menu ul li {
+        display: block;
+        margin: 5%;
+    }
+    header .row nav.menu ul {
+        text-align: left;
+    }
+    main .img-perfil{
+        margin-top: 5%;
+    }
+    main .infos{
+        text-align: center;
+    }
+    main .row {
+        height: 120vh;
+        margin-bottom: 15%;
+    }
+    section.formacoes .wrap .box-item {
+        padding: 3% 2%;
+    }
+    section.testimonials .box-testimonial {
+        margin: 10% 4%;
+    }
+    footer .sociais{
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    footer .copy {
+        justify-content: center;
+    }
+    main .row .infos h2 {
+        font-size: 36px;
+        margin-bottom: 2vh;
+    }
+    main .row .infos p.profissao {
+        margin-bottom: 1vh;
+    }
+    .backMenu{
+        position: inherit;
+        right: 5%;
+        bottom: 5%;
+    }
+}
