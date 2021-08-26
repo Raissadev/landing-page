@@ -59,7 +59,7 @@
                                 <i data-feather="map-pin" width="15" height="15"></i> <span>Sua Area</span>
                             </div><!--column-->
                             <div class="column myMessage">
-                                <span>Seu último login foi: 12/06/2019</span>
+                                <span>Seu último login foi: <?php echo date('d/m/y',time()); ?></span>
                             </div><!--myMessage-->
                             <div class="column myButtons">
                                 <div><button>Pesquisar</button></div>
