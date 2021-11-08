@@ -1,20 +1,22 @@
-# landing-page
-<h2>Sobre o Projeto</h2>
-<p>Landing page para apresentação de equipe e profissional. 😊</p>
-<h3>Front-end:</h3>
+# Landing Page
+<h3>Sobre o Projeto</h3>
+<p>Landing page para apresentação de equipe e profissional.</p>
+
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JS</li>
-</ul>
-<h3>Back-end:</h3>
-<ul>
-  <li>PHP</li>
-  <li>Database: MySql</li>
-</ul>
-<h3>Stacks:</h3>
-<ul>
-  <li>jQuery</li>
+  <li>Lenguages:</li>
+  <i>PHP, JavaScript e SQL</i>
+  
+  <li>Database:</li>
+  <i>MySql</i>
+  
+  <li>Library:</li>
+  <i>jQuery</i>
+  
+  <li>Style:</li>
+  <i>Cascading Style Sheets</i>
+  
+  <li>Markup Language:</li>
+  <i>HTML</i>
 </ul>
 
 ![landingPageGif](https://user-images.githubusercontent.com/82960240/138712764-9cc15399-f436-48b9-b2a5-17029d1f9cf5.gif)
