@@ -19,7 +19,7 @@
   <i>HTML</i>
 </ul>
 
-![landingPageGif](https://user-images.githubusercontent.com/82960240/138712764-9cc15399-f436-48b9-b2a5-17029d1f9cf5.gif)
+![landig](https://user-images.githubusercontent.com/82960240/141569220-6363833d-cadc-40c9-985c-e20962ae5156.gif)
 
 <hr />
 <h3>Autor</h3>
